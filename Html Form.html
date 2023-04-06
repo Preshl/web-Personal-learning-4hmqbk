@@ -7,7 +7,7 @@
   <title>Form</title>
 </head>
 <body style="background-color: pink;">
-  <form>
+  <div>
     <h2>School Registration Form</h2>
     <form action="https://www.w3schools.com/html/html_forms.asp" method="POST">
       <label for="Fname">Full Name:</label><br>
@@ -29,9 +29,18 @@
       <label for="Female">Female</label><br>
       <input type="radio" id="Male" name="Gender" value="Male">
       <label for="Male">Male</label><br><br>
+
+      <label for="Network">Preferred Network:</label><br>
+      <input list="Network" name="Network">
+        <datalist id="Network">
+          <option value="Mtn">
+          <option value="9Mobile">
+          <option value="Airtel">
+          <option value="Glo">
+         <option value="Spectranet">
+        </datalist><br>
       <input type="submit" value="Submit">
-
-
-  </form>
+    </form>
+  </div>
 </body>
 </html>
